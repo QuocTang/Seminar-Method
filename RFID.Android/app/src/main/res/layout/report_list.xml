@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RFIDReportActivity">
+    <LinearLayout
+        android:background="#68CAC1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:text="RFID"
+            android:textSize="30dp"
+            android:textFontWeight="500"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_weight="1"
+            android:layout_marginLeft="120dp"
+            android:text="Audit Report"
+            android:textSize="30dp"
+            android:textFontWeight="500"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+        <ListView
+            android:background="@color/white"
+            android:id="@+id/lvProducts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ListView>
+
+</LinearLayout>

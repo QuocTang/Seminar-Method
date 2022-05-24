@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+
+<RelativeLayout
+    android:padding="10dp"
+    android:layout_marginTop="0dp"
+    android:layout_marginBottom="0dp"
+    android:layout_width="match_parent"
+    android:background="@drawable/radius"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/time"
+        android:layout_marginLeft="95dp"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textColor="@color/sliding_menu_item_pressed"
+        android:textSize="20sp"
+        android:text="time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/time"
+        android:id="@+id/tvItemCode"
+        android:textStyle="bold"
+        android:textColor="#009688"
+        android:textSize="24sp"
+        android:text="Item code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvTheory"
+        android:textColor="#E91E63"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvItemCode"
+        android:textSize="20sp"
+        android:text="Theory value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvReal"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvItemCode"
+        android:layout_alignParentRight="true"
+        android:textColor="#E91E63"
+        android:textSize="20sp"
+        android:text="Real Value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvGap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTheory"
+        android:layout_alignParentLeft="true"
+        android:text="Gap"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <ImageView
+        android:id="@+id/ivEdit"
+        android:layout_alignParentRight="false"
+        android:src="@drawable/scanner256"
+        android:layout_width="35dp"
+        android:layout_height="35dp"/>
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="330dp"
+        android:layout_below="@+id/tvReal"
+        android:src="@android:drawable/ic_delete" />
+</RelativeLayout>
+</RelativeLayout>
